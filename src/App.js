@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 
-import { AmityUiKitFeed, AmityUiKitProvider } from "@amityco/ui-kit-open-source";
+import { AmityUiKitFeed, AmityUiKitProvider, AmityUIKitCommunitySideSection } from "@amityco/ui-kit-open-source";
 import Login from "./Login";
 
 const apiKey = "b3bee90c39d9a5644831d84e5a0d1688d100ddebef3c6e78";
@@ -21,7 +21,9 @@ export default function App() {
           displayName={userId}
         >
 
-        <AmityUiKitFeed/>
+        {/* <AmityUiKitFeed/> */}
+        <AmityUIKitCommunitySideSection/>
+
         </AmityUiKitProvider>
       )}
     </div>
