@@ -4,9 +4,9 @@ import { AmityUiKitFeed, AmityUiKitProvider, AmityUIKitCommunitySideSection } fr
 
 const apiKey = "b3bee90c39d9a5644831d84e5a0d1688d100ddebef3c6e78";
 
-export default function App() {
+export default function CommunityPage() {
   return (
-    <div className="App" styles={{ height: '500px', overflowY: 'scroll' }} >
+    <div className="CommunityPage" styles={{ height: '500px', overflowY: 'scroll' }} >
         <AmityUiKitProvider
           key="test"
           apiKey={apiKey}
@@ -14,11 +14,10 @@ export default function App() {
           displayName="test"
         >
 
-        <AmityUiKitFeed/>
-        {/* <AmityUIKitCommunitySideSection/> */}
+        {/* <AmityUiKitFeed/> */}
+        <AmityUIKitCommunitySideSection/>
 
         </AmityUiKitProvider>
-      
     </div>
   );
 }

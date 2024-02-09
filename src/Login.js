@@ -1,23 +1,14 @@
-export default function Login({ onSubmit = () => {} }) {
-    const handleSubmit = (e) => {
-      e.preventDefault();
-  
-      const values = Object.fromEntries(new FormData(e.target));
-  
-      onSubmit(values.username);
-    };
-  
-    return (
-      <form className="Login" onSubmit={handleSubmit}>
-        <h1>
-          Welcome to
-          <strong>Amity Social Cloud.</strong>
-        </h1>
-        <label>login</label>
-        <input type="text" name="username" required />
-        <label>password</label>
-        <input type="password" name="password" required />
-        <button type="submit">Login</button>
-      </form>
-    );
-  }
+import * as React from "react";
+import { Link } from "react-router-dom";
+
+export default function Login() {
+  return (
+    <div>
+      <h1>Users</h1>
+      <ul>
+          <li><Link to="/feed">Load Feed Page</Link></li>
+          <li><Link to="/community">Load Group Page</Link></li>
+      </ul>
+    </div>
+  );
+}
